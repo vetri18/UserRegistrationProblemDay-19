@@ -1,10 +1,42 @@
-﻿namespace UserReg
+﻿
+using RegexDemo;
+
+namespace TestProject
 {
-    class Program
+   // [TestClass]
+    public class UnitTest1
     {
-        public static void Main(string[] args)
+        //[TestMethod]
+        public void CheckFirstNameValidation()
         {
-            Console.WriteLine("Welcome to User Registration Program");
+            //Arrange
+            UserRegi name = new UserRegi();
+            string firstName = "Vidhya";
+            //Assert.IsTrue(name.IsValidName(firstName));
+
+        }
+       // [TestMethod]
+        public void CheckLastNameValidation()
+        {
+            //Arrange
+            UserRegi name = new UserRegi();
+            string lastName = "Darade";
+            //Assert.IsTrue(name.IsValidName(lastName));
+
+        }
+        //[TestMethod]
+        public void Emailvalidation()
+        {
+            UserRegi name = new UserRegi();
+            string email = "abc@1.com";
+            //Assert.IsTrue(name.Email(email));
+        }
+        //[TestMethod]
+        public void Passwordvalidation()
+        {
+            UserRegi name = new UserRegi();
+            string pwd = "abcDsf1#";
+            //Assert.IsTrue(name.Password(pwd));
         }
     }
 }
